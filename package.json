@@ -1,0 +1,28 @@
+{
+	"name": "pi-skill-loader",
+	"version": "0.1.0",
+	"description": "Codex-style skill loading for pi - type # to load skills into context without consuming an LLM turn",
+	"keywords": ["pi-package", "pi-coding-agent", "skills"],
+	"homepage": "https://github.com/wildermoth/skill-loader#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wildermoth/skill-loader.git"
+	},
+	"license": "MIT",
+	"author": "James Storer",
+	"type": "module",
+	"files": ["index.ts", "README.md", "LICENSE"],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"test": "bun test"
+	},
+	"peerDependencies": {
+		"@mariozechner/pi-coding-agent": "*"
+	},
+	"devDependencies": {
+		"typescript": "^5.7.3"
+	}
+}
